@@ -22,7 +22,13 @@ e.g.
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
 */
+// First, we need to find the kitties whose color is orange. For this, we can use filter()
+// Next, we need to convert this array to one of just the kitty names. We can use map() to accomplish this
 
+const findOrangeNames = () => {
+  const orangeKitties = kitties.filter((kitty) => kitty.color === 'orange')
+  return orangeKitties.map((kitty) => kitty.name)
+}
 
 /*
 Level 2
