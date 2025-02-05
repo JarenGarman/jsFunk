@@ -44,11 +44,11 @@ const {
 } = require("../prototypes/problem-sets/books")
 
 const {
-    getBeerCount,
-    getBreweryBeerCount,
-    getSingleBreweryBeerCount,
-    findHighestAbvBeer,
-    findHighestAbvAll
+  getBeerCount,
+  getBreweryBeerCount,
+  getSingleBreweryBeerCount,
+  findHighestAbvBeer,
+  findHighestAbvAll
 } = require("../prototypes/problem-sets/breweries")
 
 const {
@@ -110,7 +110,7 @@ const {
 } = require("../prototypes/problem-sets/plants")
 
 const {
-  countLetters, 
+  countLetters,
   findLetterCounts
 } = require("../prototypes/problem-sets/sentence")
 
@@ -289,8 +289,8 @@ describe("PROTOTYPES", () => {
       const robbieTasks = getTasksByPerson("Robbie");
 
       expect(letaTasks).to.deep.equal(['write README', 'refactor']);
-      expect(travisTasks).to.deep.equal([ 'debug issue #14', 'add feature #38' ]);
-      expect(robbieTasks).to.deep.equal([ 'debug issue #13', 'add feature #33' ]);
+      expect(travisTasks).to.deep.equal(['debug issue #14', 'add feature #38']);
+      expect(robbieTasks).to.deep.equal(['debug issue #13', 'add feature #33']);
     })
 
     it.skip("getStatusTimes", () => {
@@ -306,26 +306,26 @@ describe("PROTOTYPES", () => {
       const crochetList = getSupplyList('crocheting');
       const weavingList = getSupplyList('weaving');
 
-      expect(crossStitchList).to.deep.equal([ 'fabric', 'needle', 'thread', 'scissor', 'hoop' ]);
-      expect(crochetList).to.deep.equal([ 'hook', 'yarn', 'scissor' ]);
-      expect(weavingList).to.deep.equal([ 'loom', 'needle', 'yarn', 'scissor' ]);
+      expect(crossStitchList).to.deep.equal(['fabric', 'needle', 'thread', 'scissor', 'hoop']);
+      expect(crochetList).to.deep.equal(['hook', 'yarn', 'scissor']);
+      expect(weavingList).to.deep.equal(['loom', 'needle', 'yarn', 'scissor']);
     });
 
-    
+
     it.skip("getDetailedList", () => {
       const knitList = getDetailedList("knitting");
       const crochetList = getDetailedList('crocheting');
       const weavingList = getDetailedList('weaving');
 
-      expect(knitList).to.deep.equal([ 
-        'I need 2 needles.', 
-        'I need 4 yarns.', 
-        'I need 1 scissor.' 
+      expect(knitList).to.deep.equal([
+        'I need 2 needles.',
+        'I need 4 yarns.',
+        'I need 1 scissor.'
       ]);
-      expect(crochetList).to.deep.equal([ 
-        'I need 1 hook.', 
-        'I need 3 yarns.', 
-        'I need 1 scissor.' 
+      expect(crochetList).to.deep.equal([
+        'I need 1 hook.',
+        'I need 3 yarns.',
+        'I need 1 scissor.'
       ]);
       expect(weavingList).to.deep.equal([
         'I need 1 loom.',
@@ -357,11 +357,11 @@ describe("PROTOTYPES", () => {
       const e = organizeByHabitat("meadows");
 
       expect(e).to.deep.equal({
-        meadows: [ 'Colorado Blue Columbine', 'Alpine Forget-Me-Not', 'Fireweed' ],
-        forests: [ 'Aspen Tree', 'Engelmann Spruce', 'Blue Spruce' ],
-        moutains: [ 'Columbian Lily' ],
-        mountains: [ 'Rocky Mountain Bristlecone Pine', 'Scarlet Gilia' ],
-        grasslands: [ 'Indian Paintbrush' ]
+        meadows: ['Colorado Blue Columbine', 'Alpine Forget-Me-Not', 'Fireweed'],
+        forests: ['Aspen Tree', 'Engelmann Spruce', 'Blue Spruce'],
+        moutains: ['Columbian Lily'],
+        mountains: ['Rocky Mountain Bristlecone Pine', 'Scarlet Gilia'],
+        grasslands: ['Indian Paintbrush']
       });
     })
   })
@@ -434,7 +434,7 @@ describe("PROTOTYPES", () => {
       expect(partyGames).to.deep.equal(["Werewolf", "Cards Against Humanity", "Codenames", "Sushi Go! Party", "Tsuro"]);
     });
 
-    
+
     it.skip("findHighestRatedGamesByType", () => {
       const highestStrategy = findHighestRatedGamesByType('strategy');
       const highestChildrens = findHighestRatedGamesByType('childrens');
@@ -477,7 +477,7 @@ describe("PROTOTYPES", () => {
       expect(ursulaGoal).to.equal("Ursula's goal is to rule the seas.");
     });
 
-    
+
     it.skip("getLoyalty", () => {
       const scarLoyalty = getLoyalty('scar');
       const ursulaLoyalty = getLoyalty('ursula');
@@ -722,7 +722,7 @@ describe("PROTOTYPES", () => {
     it.skip("getByGenre", () => {
       const e = getByGenre(books, "Fiction", 1954);
 
-      expect(e).to.deep.equal([ 'Life of Pi', 'The Bell Jar' ])
+      expect(e).to.deep.equal(['Life of Pi', 'The Bell Jar'])
 
       const e2 = getByGenre(books, "Science Fiction", 1950);
 
@@ -762,10 +762,10 @@ describe("PROTOTYPES", () => {
       it.skip("findByType sunny", () => {
         const e = findByType(weather, "sunny");
 
-        expect(e).to.deep.equal([ 
+        expect(e).to.deep.equal([
           'Atlanta, Georgia is sunny.',
           'New Orleans, Louisiana is sunny.',
-          'Raleigh, North Carolina is mostly sunny.' 
+          'Raleigh, North Carolina is mostly sunny.'
         ]
         )
       }),
