@@ -61,7 +61,12 @@ e.g.
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
 */
+// We can use sort() to sort the array
+// In order to sort oldest to youngest, we need to do b - a
 
+const sortByAge = () => {
+  return kitties.sort((a, b) => b.age - a.age)
+}
 
 /*
 Level 3
