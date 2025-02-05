@@ -94,7 +94,15 @@ e.g.
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
 */
-  
+// First, we need to create a copy of kitties that we can modify
+// Next, we will take each kitty and add two to it's age
+// Then, return this modified copy
+
+const growUp = () => {
+  let grownKitties = kitties
+  grownKitties.forEach((kitty) => kitty.age += 2)
+  return grownKitties
+}
 
 /*
 Level 4
