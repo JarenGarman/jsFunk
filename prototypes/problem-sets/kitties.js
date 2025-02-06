@@ -1,5 +1,5 @@
-const { kitties } = require('../datasets/kitties');
-const { puppers } = require('../datasets/puppers');
+const { kitties } = require('../datasets/kitties')
+const { puppers } = require('../datasets/puppers')
 
 // To run the code you've written in this file, use node prototypes/problem-sets/kitties.js
 
@@ -175,12 +175,8 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-
-
-
-
-// module.exports = {
-//   findOrangeNames,
-//   sortByAge,
-//   growUp
-// };
+module.exports = {
+  findOrangeNames,
+  sortByAge,
+  growUp
+}
