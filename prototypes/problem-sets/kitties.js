@@ -25,9 +25,10 @@ Annotate:
 // First, we need to find the kitties whose color is orange. For this, we can use filter()
 // Next, we need to convert this array to one of just the kitty names. We can use map() to accomplish this
 
-const findOrangeNames = () => {
-  const orangeKitties = kitties.filter((kitty) => kitty.color === 'orange')
-  return orangeKitties.map((kitty) => kitty.name)
+const findOrangeNames = (animals) => {
+  let animalsCopy = animals
+  const orangeAnimals = animalsCopy.filter((animal) => animal.color === 'orange')
+  return orangeAnimals.map((animal) => animal.name)
 }
 
 /*
@@ -64,8 +65,9 @@ Annotation:
 // We can use sort() to sort the array
 // In order to sort oldest to youngest, we need to do b - a
 
-const sortByAge = () => {
-  return kitties.sort((a, b) => b.age - a.age)
+const sortByAge = (animals) => {
+  let animalsCopy = animals
+  return animalsCopy.sort((a, b) => b.age - a.age)
 }
 
 /*
@@ -98,10 +100,10 @@ Annotation:
 // Next, we will take each kitty and add two to it's age
 // Then, return this modified copy
 
-const growUp = () => {
-  let grownKitties = kitties
-  grownKitties.forEach((kitty) => kitty.age += 2)
-  return grownKitties
+const growUp = (animals) => {
+  let grownAnimals = animals
+  grownAnimals.forEach((animal) => animal.age += 2)
+  return grownAnimals
 }
 
 /*
@@ -154,7 +156,10 @@ e.g.
 Annotation:
   Jot down any takeaways, questions, or reflections about this refactoring.
 */
-
+// First off, we need to add in a parameter to accept an array argument. Animals seems like a good name
+// Next, we need to replace any instance of kitty, kitties, or similar to their animal counterparts
+// After doing this, I see that my first two solutions are working on the original dataset instead of copies
+// I will need to refactor these methods to work on copies so it doesn't change the results of future tests
 
 /*
 Level 5
@@ -166,8 +171,8 @@ Test:
   * Refactor as needed until all 6 tests are passing
 
 Annotation:
-  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions. 
-  Take notes on the error messages that led you to fixing those details. 
+  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
+  Take notes on the error messages that led you to fixing those details.
 */
 
 
