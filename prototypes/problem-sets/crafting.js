@@ -99,7 +99,7 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-// module.exports = {
-//   getSupplyList,
-//   getDetailedList
-// }
+module.exports = {
+  getSupplyList,
+  getDetailedList
+}
