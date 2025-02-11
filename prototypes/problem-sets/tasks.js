@@ -58,6 +58,17 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getTasksByPerson = (name) => {
+  const assignedTasks = tasks.filter((task) => {
+    return task.assignedTo === name
+  })
+  return assignedTasks.map((task) => {
+    return task.taskName
+  })
+}
+
+console.log(getTasksByPerson("Leta"))
+console.log(getTasksByPerson("Travis"))
 
 /*
 Level 3
