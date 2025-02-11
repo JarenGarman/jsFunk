@@ -67,6 +67,19 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getDetailedList = (craft) => {
+  return craftSupplies[craft].reduce((list, supply) => {
+    if (supply.amountNeeded === 1) {
+      list.push(`I need ${supply.amountNeeded} ${supply.name}.`)
+    } else {
+      list.push(`I need ${supply.amountNeeded} ${supply.name}s.`)
+    }
+    return list
+  }, [])
+}
+
+console.log(getDetailedList("weaving"))
+console.log(getDetailedList("crocheting"))
 
 /*
 Level 3
