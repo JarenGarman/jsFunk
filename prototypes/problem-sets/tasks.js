@@ -23,6 +23,16 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getAverageTime = () => {
+  const totalTime = tasks.reduce((totalTime, task) => {
+    totalTime += task.minutesNeeded
+    return totalTime
+  }, 0)
+  const avgTime = totalTime / tasks.length
+  return `The average time for all tasks is ${avgTime} minutes.`
+}
+
+console.log(getAverageTime())
 
 /*
 Level 2
