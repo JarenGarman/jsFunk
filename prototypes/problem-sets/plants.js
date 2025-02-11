@@ -21,6 +21,9 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use reduce to iterate over plants and find the count
+  2. Add to the accumulator if the blooming season includes spring
 */
 
 const findSpringBloomers = () => {
