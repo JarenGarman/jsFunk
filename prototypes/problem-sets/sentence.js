@@ -1,4 +1,4 @@
-const sentence = "Potatoes are so unbelievably delicious!"
+const sentence = 'Potatoes are so unbelievably delicious!'
 
 // To run the code you've written in this file, use node prototypes/problem-sets/sentence.js
 
