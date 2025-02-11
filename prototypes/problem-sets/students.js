@@ -20,7 +20,7 @@ e.g.
       ["John", "Bob", "Eve"]
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 const findEnrolledStudents = () => {
@@ -37,7 +37,7 @@ console.log(findEnrolledStudents())
 /*
 Level 2
 
-Code: 
+Code:
   Write a function called "getAverageGrade" that takes in a student's name and returns that student's average grade.
 
 Invoke:
@@ -51,14 +51,14 @@ e.g.
     should print -->  84.5
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 3
 
-Code: 
+Code:
   Write a function called "findBestAverageGrade" that returns the name of the student with the highest average grade.
 
 Invoke:
@@ -68,7 +68,7 @@ e.g.
     should print -->  "Eve"
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
@@ -82,8 +82,8 @@ Test:
   * Refactor as needed until all students tests are passing
 
 Annotation:
-  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions. 
-  Take notes on the error messages that led you to fixing those details. 
+  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
+  Take notes on the error messages that led you to fixing those details.
 */
 
 
