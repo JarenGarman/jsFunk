@@ -65,6 +65,10 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Create a new array using reduce to iterate over craftSupplies
+  2. Return an interpolated string
+  3. If amountNeeded is not equal to one, add an s to the end
 */
 
 const getDetailedList = (craft) => {
