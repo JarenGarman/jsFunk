@@ -28,6 +28,14 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getSupplyList = (craft) => {
+  return craftSupplies[craft].map((supply) => {
+    return supply.name
+  })
+}
+
+console.log(getSupplyList("crossStitching"))
+console.log(getSupplyList("crocheting"))
 
 /*
 Level 2
