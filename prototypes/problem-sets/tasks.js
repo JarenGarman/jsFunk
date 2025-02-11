@@ -21,6 +21,10 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Sum the total time by adding each of the minutesNeeded to an accumulator
+  2. Find the average by dividing total by the amount of tasks
+  3. Return an interpolated string
 */
 
 const getAverageTime = () => {
