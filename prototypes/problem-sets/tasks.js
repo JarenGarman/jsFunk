@@ -131,6 +131,11 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Add status param
+  2. Create statusTasks using filter to select tasks with matching status
+  3. Replace tasks calls with statusTasks
+  4. Add status to string interpolation
 */
 
 console.log(getAverageTime("complete"))
