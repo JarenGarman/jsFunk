@@ -56,15 +56,18 @@ Annotation:
   2. Divide the total height by the total number of plants to find the average and return it
 */
 
-const findAverageHeight = () => {
-  const totalHeight = coloradoPlants.reduce((totalHeight, plant) => {
+const findAverageHeight = (habitat) => {
+  const habitatPlants = coloradoPlants.filter((plant) => {
+    return plant.habitat === habitat
+  })
+  const totalHeight = habitatPlants.reduce((totalHeight, plant) => {
     totalHeight += plant.height
     return totalHeight
   }, 0)
-  return totalHeight / coloradoPlants.length
+  return totalHeight / habitatPlants.length
 }
 
-console.log(findAverageHeight())
+// console.log(findAverageHeight())
 
 /*
 Level 3
@@ -86,6 +89,8 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+console.log(findAverageHeight("meadows"))
+console.log(findAverageHeight("forests"))
 
 /*
 Level 4
