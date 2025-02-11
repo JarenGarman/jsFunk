@@ -116,6 +116,11 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Create a unique array of habitats
+  2. Iterate over the array to create a new object with habitats as keys
+  3. Filter plants to get only plants belonging to that habitat
+  4. Map those plants out to get only their names and set that as the property in the object
 */
 
 const organizeByHabitat = () => {
