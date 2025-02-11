@@ -155,9 +155,8 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-
-// module.exports = {
-//   getAverageTime,
-//   getTasksByPerson,
-//   getStatusTimes
-// }
+module.exports = {
+  getAverageTime,
+  getTasksByPerson,
+  getStatusTimes
+}
