@@ -58,9 +58,9 @@ Annotation:
 */
 
 const getAverageGrade = (studentName) => {
-  const student = students.filter((student) => {
+  const student = students.find((student) => {
     return student.name === studentName
-  })[0]
+  })
   const totalGrade = student.grades.reduce((totalGrade, grade) => {
     totalGrade += grade
     return totalGrade
