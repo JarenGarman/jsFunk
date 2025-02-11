@@ -1,4 +1,4 @@
-var sentence = "Potatoes are so unbelievably delicious!";
+const sentence = "Potatoes are so unbelievably delicious!"
 
 // To run the code you've written in this file, use node prototypes/problem-sets/sentence.js
 
@@ -9,13 +9,13 @@ console.log('Running sentence.js')
 /*
 Level 1
 
-Code: 
+Code:
   Write a function called "countLetters" that takes in a letter and counts how many times that letter appears in the sentence. Capitalization should not matter.
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
-  console.log(countLetters('t')) 
+  console.log(countLetters('t'))
     // should print ==> 2
 
   console.log(countLetters('z'))
@@ -25,23 +25,23 @@ e.g.
     // should print ==> 5
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 2
 
-Code: 
+Code:
   Write a function called "findLetterCounts" that returns an object which lists all the letters (lowercase) and how many times that letter appears.
-   
-  Note: Keep the spaces and ! in your object. 
+
+  Note: Keep the spaces and ! in your object.
 
 Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(findLetterCounts())
-    should print -->   
+    should print -->
     {
         p: 1,
         o: 4,
@@ -64,7 +64,7 @@ e.g.
       }
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
@@ -78,12 +78,11 @@ Test:
   * Refactor as needed until all sentence tests are passing
 
 Annotation:
-  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions. 
-  Take notes on the error messages that led you to fixing those details. 
+  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
+  Take notes on the error messages that led you to fixing those details.
 */
-
 
 // module.exports = {
 //   countLetters, 
 //   findLetterCounts
-// };
+// }
