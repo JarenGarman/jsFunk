@@ -23,6 +23,16 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const findSpringBloomers = () => {
+  return coloradoPlants.reduce((springBloomers, plant) => {
+    if (plant.bloomingSeason.includes('Spring')) {
+      springBloomers += 1
+    }
+    return springBloomers
+  }, 0)
+}
+
+console.log(findSpringBloomers())
 
 /*
 Level 2
