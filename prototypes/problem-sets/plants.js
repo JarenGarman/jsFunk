@@ -118,6 +118,25 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const organizeByHabitat = () => {
+  const habitats = coloradoPlants.reduce((habitats, plant) => {
+    if (!habitats.includes(plant.habitat)) {
+      habitats.push(plant.habitat)
+    }
+    return habitats
+  }, [])
+  return habitats.reduce((organizedHabitats, habitat) => {
+    const habitatPlants = coloradoPlants.filter((plant) => {
+      return plant.habitat === habitat
+    })
+    organizedHabitats[habitat] = habitatPlants.map((plant) => {
+      return plant.name
+    })
+    return organizedHabitats
+  }, {})
+}
+
+console.log(organizeByHabitat())
 
 /*
 Level 5
