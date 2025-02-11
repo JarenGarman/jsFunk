@@ -91,6 +91,18 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const findBestAverageGrade = () => {
+  const studentNames = students.map((student) => {
+    return student.name
+  })
+  const averageGrades = studentNames.reduce((averageGrades, name) => {
+    averageGrades.push(getAverageGrade(name))
+    return averageGrades
+  }, [])
+  return studentNames.at(averageGrades.indexOf(averageGrades.max))
+}
+
+console.log(findBestAverageGrade())
 
 /*
 Level 4
