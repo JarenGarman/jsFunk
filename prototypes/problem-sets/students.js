@@ -89,16 +89,21 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Create an array of student names using map on the student objects
+  2. Create a new array of average grades in the same indices as their student name counterparts
+  3. Find the max of the average grades
+  4. Find the index of the max
+  5. Find the student name at the same index
 */
 
 const findBestAverageGrade = () => {
   const studentNames = students.map((student) => {
     return student.name
   })
-  const averageGrades = studentNames.reduce((averageGrades, name) => {
-    averageGrades.push(getAverageGrade(name))
-    return averageGrades
-  }, [])
+  const averageGrades = studentNames.map((name) => {
+    return getAverageGrade(name)
+  })
   return studentNames.at(averageGrades.indexOf(averageGrades.max))
 }
 
