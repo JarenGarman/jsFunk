@@ -21,6 +21,9 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Filter students based on whether they are enrolled
+  2. Map out the student objects to a new array of student names
 */
 
 const findEnrolledStudents = () => {
