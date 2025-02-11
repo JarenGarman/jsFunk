@@ -23,6 +23,16 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
 */
 
+const findEnrolledStudents = () => {
+  const enrolledStudents = students.filter((student) => {
+    return student.enrolled
+  })
+  return enrolledStudents.map((student) => {
+    return student.name
+  })
+}
+
+console.log(findEnrolledStudents())
 
 /*
 Level 2
