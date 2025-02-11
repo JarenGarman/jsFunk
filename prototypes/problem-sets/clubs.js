@@ -28,8 +28,26 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
-
-
+const findClubMembers = (clubs) => {
+  const uniqMembers = []
+  clubs.forEach((club) => {
+    club.members.forEach((member) => {
+      if (!uniqMembers.includes(member)) {
+        uniqMembers.push(member)
+      }
+    })
+  })
+  return uniqMembers.reduce((memberClubs, member) => {
+    const clubObjs = clubs.filter((club) => {
+      return club.members.includes(member)
+    })
+    memberClubs[member] = clubObjs.map((club) => {
+      return club.club
+    })
+    return memberClubs
+  }, {})
+}
+console.log(findClubMembers(clubs))
 /*
 Level 2
 
