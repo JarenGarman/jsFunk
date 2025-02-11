@@ -92,6 +92,10 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use reduce to create a new object
+  2. For each task, add the minutesNeeded to the appropriate status key
+  3. If key does not exist yet, create it with initial value of 0 and add minutesNeeded
 */
 
 const getStatusTimes = () => {
