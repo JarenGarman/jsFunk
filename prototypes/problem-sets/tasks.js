@@ -1,3 +1,4 @@
+const { stat } = require('fs')
 const { tasks } = require('../datasets/tasks')
 
 // To run the code you've written in this file, use node prototypes/problem-sets/tasks.js
@@ -27,16 +28,19 @@ Annotate:
   3. Return an interpolated string
 */
 
-const getAverageTime = () => {
-  const totalTime = tasks.reduce((totalTime, task) => {
+const getAverageTime = (status) => {
+  const statusTasks = tasks.filter((task) => {
+    return task.status === status
+  })
+  const totalTime = statusTasks.reduce((totalTime, task) => {
     totalTime += task.minutesNeeded
     return totalTime
   }, 0)
-  const avgTime = totalTime / tasks.length
-  return `The average time for all tasks is ${avgTime} minutes.`
+  const avgTime = totalTime / statusTasks.length
+  return `The average time for all ${status} tasks is ${avgTime} minutes.`
 }
 
-console.log(getAverageTime())
+// console.log(getAverageTime())
 
 /*
 Level 2
@@ -129,6 +133,8 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+console.log(getAverageTime("complete"))
+console.log(getAverageTime("inProgress"))
 
 /*
 Level 5
