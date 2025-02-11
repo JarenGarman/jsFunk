@@ -26,6 +26,9 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Grab the supplies list from the craftSupplies object
+  2. Map the supplies list out to an array of just the supply names
 */
 
 const getSupplyList = (craft) => {
