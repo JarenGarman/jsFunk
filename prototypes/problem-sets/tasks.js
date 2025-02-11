@@ -94,6 +94,14 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getStatusTimes = () => {
+  return tasks.reduce((statusTimes, task) => {
+    statusTimes[task.status] = (statusTimes[task.status] || 0) + task.minutesNeeded
+    return statusTimes
+  }, {})
+}
+
+console.log(getStatusTimes())
 
 /*
 Level 4
