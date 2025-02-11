@@ -53,6 +53,15 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const findAverageHeight = () => {
+  const totalHeight = coloradoPlants.reduce((totalHeight, plant) => {
+    totalHeight += plant.height
+    return totalHeight
+  }, 0)
+  return totalHeight / coloradoPlants.length
+}
+
+console.log(findAverageHeight())
 
 /*
 Level 3
