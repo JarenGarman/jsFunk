@@ -64,7 +64,7 @@ If you'd like to keep track of your progress, feel free to use the checklist bel
 - [X] kitties
 - [X] puppers
 - [X] club
-- [ ] student
+- [X] student
 - [ ] task
 - [ ] crafting
 - [ ] plants

@@ -20,14 +20,27 @@ e.g.
       ["John", "Bob", "Eve"]
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Filter students based on whether they are enrolled
+  2. Map out the student objects to a new array of student names
 */
 
+const findEnrolledStudents = () => {
+  const enrolledStudents = students.filter((student) => {
+    return student.enrolled
+  })
+  return enrolledStudents.map((student) => {
+    return student.name
+  })
+}
+
+console.log(findEnrolledStudents())
 
 /*
 Level 2
 
-Code: 
+Code:
   Write a function called "getAverageGrade" that takes in a student's name and returns that student's average grade.
 
 Invoke:
@@ -41,14 +54,31 @@ e.g.
     should print -->  84.5
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Find student object by name
+  2. Find the totalGrade by summing the grades array
+  3. Find and return the average by dividing totalGrade by length of grades array
 */
 
+const getAverageGrade = (studentName) => {
+  const student = students.find((student) => {
+    return student.name === studentName
+  })
+  const totalGrade = student.grades.reduce((totalGrade, grade) => {
+    totalGrade += grade
+    return totalGrade
+  }, 0)
+  return totalGrade / student.grades.length
+}
+
+console.log(getAverageGrade("John"))
+console.log(getAverageGrade("Bob"))
 
 /*
 Level 3
 
-Code: 
+Code:
   Write a function called "findBestAverageGrade" that returns the name of the student with the highest average grade.
 
 Invoke:
@@ -58,9 +88,26 @@ e.g.
     should print -->  "Eve"
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Create an array of student names using map on the student objects
+  2. Create a new array of average grades in the same indices as their student name counterparts
+  3. Find the max of the average grades
+  4. Find the index of the max
+  5. Find the student name at the same index
 */
 
+const findBestAverageGrade = () => {
+  const studentNames = students.map((student) => {
+    return student.name
+  })
+  const averageGrades = studentNames.map((name) => {
+    return getAverageGrade(name)
+  })
+  return studentNames.at(averageGrades.indexOf(averageGrades.max))
+}
+
+console.log(findBestAverageGrade())
 
 /*
 Level 4
@@ -72,13 +119,13 @@ Test:
   * Refactor as needed until all students tests are passing
 
 Annotation:
-  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions. 
-  Take notes on the error messages that led you to fixing those details. 
+  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
+  Take notes on the error messages that led you to fixing those details.
 */
 
 
-// module.exports = {
-//   findEnrolledStudents,
-//   getAverageGrade,
-//   findBestAverageGrade
-// };
+module.exports = {
+  findEnrolledStudents,
+  getAverageGrade,
+  findBestAverageGrade
+}
