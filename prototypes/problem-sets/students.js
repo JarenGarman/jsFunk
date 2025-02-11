@@ -57,6 +57,19 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getAverageGrade = (studentName) => {
+  const student = students.filter((student) => {
+    return student.name === studentName
+  })[0]
+  const totalGrade = student.grades.reduce((totalGrade, grade) => {
+    totalGrade += grade
+    return totalGrade
+  }, 0)
+  return totalGrade / student.grades.length
+}
+
+console.log(getAverageGrade("John"))
+console.log(getAverageGrade("Bob"))
 
 /*
 Level 3
