@@ -55,6 +55,10 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Find student object by name
+  2. Find the totalGrade by summing the grades array
+  3. Find and return the average by dividing totalGrade by length of grades array
 */
 
 const getAverageGrade = (studentName) => {
