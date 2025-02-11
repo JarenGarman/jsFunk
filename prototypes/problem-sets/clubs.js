@@ -26,6 +26,14 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Create an empty array to eventually hold a unique collection of member names
+  2. Iterate over each club to find it's members
+  3. Iterate over each member to add it to the uniqMembers array if it is not already present
+  4. Iterate over uniqMembers to create the resulting object to be returned
+  5. Filter out the club objects that do not contain the member
+  6. Convert the objects to the club names and assign that as a property for the key of whichever member we are currently iterating over
+  7. Return the new object for the next iteration
 */
 
 const findClubMembers = (clubs) => {
