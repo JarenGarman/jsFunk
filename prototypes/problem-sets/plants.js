@@ -51,6 +51,9 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use reduce to find the total height of all plants
+  2. Divide the total height by the total number of plants to find the average and return it
 */
 
 const findAverageHeight = () => {
