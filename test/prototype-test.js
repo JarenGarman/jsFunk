@@ -126,7 +126,7 @@ const {
   getStatusTimes
 } = require("../prototypes/problem-sets/tasks")
 
-// Tests 
+// Tests
 describe("PROTOTYPES", () => {
   describe("Kitty Prompts", () => {
     it("orangeKittyNames", () => {
