@@ -99,7 +99,14 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const doInventory = () => {
+  return cakes.reduce((totalCakes, cake) => {
+    totalCakes += cake.inStock
+    return totalCakes
+  }, 0)
+}
 
+console.log(doInventory())
 
 /*
 Level 4
