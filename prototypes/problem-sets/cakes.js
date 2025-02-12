@@ -125,6 +125,10 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use reduce to create a new array which will eventually contain all unique ingredients
+  2. For each cake, iterate over each topping
+  3. If the uniqToppings array does not include the topping, add it to the array
 */
 
 const getToppings = () => {
