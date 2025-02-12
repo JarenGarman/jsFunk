@@ -59,6 +59,11 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Create a new array of the same size and in the same order, containing only game ratings
+  2. Find the max value in this array
+  3. Find the index of this value
+  4. Return the game at this index in the original boardGames of the type
 */
 
 const findHighestRatedGamesByType = (type) => {
