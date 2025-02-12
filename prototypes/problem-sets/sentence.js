@@ -26,6 +26,10 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Split the sentence into an array of individual characters
+  2. Use reduce to find the sum of all of the characters that match the letter param
+  3. Call .toLowerCase() on the char and letter param to account for differences in case
 */
 
 const countLetters = (letter) => {
