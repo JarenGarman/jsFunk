@@ -90,6 +90,17 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getLoyalty = (boss) => {
+  const sidekicks = bosses[boss].sidekicks
+  const totalLoyalty = sidekicks.reduce((totalLoyalty, sidekick) => {
+    totalLoyalty += sidekick.loyaltyToBoss
+    return totalLoyalty
+  }, 0)
+  return totalLoyalty / sidekicks.length
+}
+
+console.log(getLoyalty("scar"))
+console.log(getLoyalty("ursula"))
 
 /*
 Level 4
