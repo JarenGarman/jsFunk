@@ -134,6 +134,20 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const averageScoreByTypeAndPlayers = (type, maxPlayers) => {
+  const eligibleGames = boardGames[type].filter((game) => {
+    return game.maxPlayers === maxPlayers
+  })
+  const totalRating = eligibleGames.reduce((totalRating, game) => {
+    totalRating += game.rating
+    return totalRating
+  }, 0)
+  return totalRating / eligibleGames.length
+}
+
+console.log(averageScoreByTypeAndPlayers("strategy", 2))
+console.log(averageScoreByTypeAndPlayers("childrens", 4))
+
 /*
 Level 5
 
