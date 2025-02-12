@@ -115,6 +115,8 @@ Test:
 Annotation:
   If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
   Take notes on the error messages that led you to fixing those details.
+
+  1. I needed to call .toLowerCase() on the sentence before separating it to account for case
 */
 
 module.exports = {
