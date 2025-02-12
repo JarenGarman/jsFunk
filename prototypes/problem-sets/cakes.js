@@ -1,4 +1,4 @@
-const { cakes } = require('../datasets/cakes');
+const { cakes } = require('../datasets/cakes')
 
 // To run the code you've written in this file, use node prototypes/problem-sets/cakes.js
 
@@ -9,14 +9,14 @@ console.log('Running cakes.js')
 /*
 Level 1
 
-Code: 
+Code:
   Write a function called "getStockCounts" that returns an array of objects that include just the flavor of the cake and how much of that cake is in stock.
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(getStockCounts())
-    should print --> 
+    should print -->
       [
        { flavor: 'dark chocolate', inStock: 15 },
        { flavor: 'yellow', inStock: 14 },
@@ -24,21 +24,21 @@ e.g.
       ]
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 2
 
-Code: 
+Code:
   Write a function called "getInStock" that returns an array of only the cakes that are in stock.
 
 Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(getInStock())
-    should print -->   
+    should print -->
     [
       {
       cakeFlavor: 'dark chocolate',
@@ -58,57 +58,57 @@ e.g.
     ]
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 3
 
-Code: 
+Code:
   Write a function called "doInventory" that returns the total amount of cakes in stock.
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(doInventory())
     should print -->  59
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
-  
+
 /*
 Level 4
 
-Code: 
+Code:
   Write a function called "getToppings" that returns an array of all unique toppings (no duplicates) needed to bake every cake in the dataset.
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(getToppings())
-    should print -->  
+    should print -->
         ['dutch process cocoa', 'toasted sugar', 'smoked sea salt', 'berries', ..etc]
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 5
 
-Code: 
+Code:
   I need to make a grocery list.  Write a function called "makeGroceryList" that will give me an object where the keys are each topping, and the values are the amount of that topping I need to buy.
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(makeGroceryList())
-    should print -->  
+    should print -->
       {
         'dutch process cocoa': 1,
         'toasted sugar': 3,
@@ -118,7 +118,7 @@ e.g.
       }
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
@@ -133,11 +133,9 @@ Test:
   * Refactor as needed until all 5 tests are passing
 
 Annotation:
-  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions. 
-  Take notes on the error messages that led you to fixing those details. 
+  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
+  Take notes on the error messages that led you to fixing those details.
 */
-
-
 
 // module.exports = {
 //   getStockCounts,
@@ -145,4 +143,4 @@ Annotation:
 //   doInventory,
 //   getToppings,
 //   makeGroceryList
-// };
+// }

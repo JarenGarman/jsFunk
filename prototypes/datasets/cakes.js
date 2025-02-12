@@ -41,8 +41,8 @@ const cakes = [
     toppings: ['smoked sea salt', 'toasted sugar'],
     inStock: 0
   }
-];
+]
 
 module.exports = {
   cakes
-};
+}
