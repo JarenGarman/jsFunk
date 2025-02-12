@@ -30,12 +30,12 @@ Annotate:
   1. Return an interpolated string using the name and signatureMove
 */
 
-const getBossData = (boss) => {
-  return `${bosses[boss].name}'s signatureMove is ${bosses[boss].signatureMove}.`
+const getBossData = (boss, data) => {
+  return `${bosses[boss].name}'s ${data} is ${bosses[boss][data]}.`
 }
 
-console.log(getBossData("scar"))
-console.log(getBossData("ursula"))
+// console.log(getBossData("scar"))
+// console.log(getBossData("ursula"))
 
 /*
 Level 2
@@ -64,6 +64,9 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+console.log(getBossData("scar", "archnemesis"))
+console.log(getBossData("jafar", "signatureMove"))
+console.log(getBossData("ursula", "goal"))
 
 /*
 Level 3
