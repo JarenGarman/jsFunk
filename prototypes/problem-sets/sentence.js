@@ -28,6 +28,19 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const countLetters = (letter) => {
+  const chars = sentence.split('')
+  return chars.reduce((numLetter, char) => {
+    if (char.toLowerCase() === letter.toLowerCase()) {
+      numLetter++
+    }
+    return numLetter
+  }, 0)
+}
+
+console.log(countLetters('t'))
+console.log(countLetters('z'))
+console.log(countLetters('E'))
 
 /*
 Level 2
