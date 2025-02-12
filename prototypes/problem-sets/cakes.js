@@ -25,6 +25,8 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Map over each cake to convert it into an object with just the cakeFlavor and inStock properties
 */
 
 const getStockCounts = () => {
