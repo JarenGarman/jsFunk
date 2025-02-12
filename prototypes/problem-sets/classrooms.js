@@ -204,7 +204,7 @@ Annotate:
   1. Setup param of classrooms, which is already referenced in the function
 */
 
-console.log(sortByCapacity(classrooms))
+// console.log(sortByCapacity(classrooms))
 
 /*
 Level 6
@@ -326,9 +326,9 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-// module.exports = {
-//   getClassrooms,
-//   getCapacities,
-//   sortByCapacity,
-//   filterAndSortClassrooms
-// };
+module.exports = {
+  getClassrooms,
+  getCapacities,
+  sortByCapacity,
+  filterAndSortClassrooms
+}
