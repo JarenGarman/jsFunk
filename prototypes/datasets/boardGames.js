@@ -11,7 +11,7 @@ const boardGames = {
   party: [
     { name: 'Werewolf', rating: 6.1, maxPlayers: 24 },
     { name: 'Cards Against Humanity', rating: 5.6, maxPlayers: 30 },
-    { name: 'Codenames', rating: 7.4, maxPlayers: 8 }, 
+    { name: 'Codenames', rating: 7.4, maxPlayers: 8 },
     { name: 'Sushi Go! Party', rating: 6.9, maxPlayers: 8 },
     { name: 'Tsuro', rating: 6.7, maxPlayers: 8 },
   ],
