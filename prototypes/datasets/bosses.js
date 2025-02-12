@@ -4,26 +4,29 @@ const bosses = {
     archnemesis: 'Mufasa',
     goal: 'to rule the pride',
     sidekicks: [
-      { name: 'Shenzi',
+      {
+        name: 'Shenzi',
         associates: ['Banzai', 'Ed'],
         strengths: ['leadership', 'sass'],
         boss: 'Scar',
         loyaltyToBoss: 4,
         dispensability: 4
       },
-      { name: 'Banzai',
+      {
+        name: 'Banzai',
         associates: ['Shenzi', 'Ed'],
         strengths: ['strategy', 'suspicion'],
         boss: 'Scar',
-        loyaltyToBoss: 5, 
+        loyaltyToBoss: 5,
         dispensability: 6
       },
-      { name: 'Ed',
+      {
+        name: 'Ed',
         associates: ['Shenzi', 'Banzai'],
         strengths: ['unknown'],
         boss: 'Scar',
-        loyaltyToBoss: 7, 
-        dispensability: 10 
+        loyaltyToBoss: 7,
+        dispensability: 10
       }],
     weaknesses: ['vanity', 'hubris', 'jealousy', 'disdain for subordinates'],
     signatureMove: 'fratricide'
@@ -33,18 +36,22 @@ const bosses = {
     archnemesis: 'Triton',
     goal: 'to rule the seas',
     sidekicks: [
-      { name: 'Flotsam',
+      {
+        name: 'Flotsam',
         associates: ['Jetsam'],
         strengths: ['spying', 'manipulation', 'flipping boats'],
         boss: 'Ursula',
-        loyaltyToBoss: 10, 
-        dispensability: 0},
-      { name: 'Jetsam',
+        loyaltyToBoss: 10,
+        dispensability: 0
+      },
+      {
+        name: 'Jetsam',
         associates: ['Flotsam'],
         strengths: ['spying', 'manipulation', 'flipping boats'],
         boss: 'Ursula',
-        loyaltyToBoss: 9, 
-        dispensability: 0}],
+        loyaltyToBoss: 9,
+        dispensability: 0
+      }],
     weaknesses: ['jealousy', 'anger', 'bitterness'],
     signatureMove: 'tricking fools into signing legal documents without reading them thoroughly'
   },
@@ -53,18 +60,20 @@ const bosses = {
     archnemesis: 'Genie',
     goal: 'to take over as Sultan',
     sidekicks: [
-      { name: 'Iago',
+      {
+        name: 'Iago',
         associates: [],
         strengths: ['mimicry', 'critical'],
         boss: 'Jafar',
-        loyaltyToBoss: 3, 
-        dispensability: 5}],
+        loyaltyToBoss: 3,
+        dispensability: 5
+      }],
     weaknesses: ['hubris', 'greed', 'disdain for subordinates'],
     signatureMove: 'hypnosis'
   }
-};
+}
 
 
 module.exports = {
   bosses
-};
+}
