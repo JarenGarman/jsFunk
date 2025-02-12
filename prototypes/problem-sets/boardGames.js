@@ -28,6 +28,14 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
 */
 
+const listGames = (type) => {
+  return boardGames[type].map((game) => {
+    return game.name
+  })
+}
+
+console.log(listGames("strategy"))
+console.log(listGames("childrens"))
 
 /*
 Level 2
