@@ -88,6 +88,10 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Assign boss sidekicks to a variable for ease of access
+  2. Use reduce to calculate sum of all sidekicks' loyalty
+  3. Return totalLoyalty divided by the amount of sidekicks
 */
 
 const getLoyalty = (boss) => {
