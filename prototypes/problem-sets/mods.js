@@ -28,7 +28,15 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getStats = () => {
+  return mods.map((mod) => {
+    const result = { mod: mod.mod }
+    result.studentsPerInstructor = mod.students / mod.instructors
+    return result
+  })
+}
 
+console.log(getStats())
 
 /*
 Level 2
