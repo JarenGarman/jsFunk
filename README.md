@@ -73,7 +73,7 @@ If you'd like to keep track of your progress, feel free to use the checklist bel
 - [X] boardGames
 - [X] bosses
 - [X] cakes
-- [ ] classrooms
+- [X] classrooms
 - [ ] books
 - [ ] weather
 - [ ] nationalParks
