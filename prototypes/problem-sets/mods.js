@@ -26,6 +26,10 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Map over mods to create a new array of the same length
+  2. Create a new object, carry over mod from the original object
+  3. Create new studentsPerInstructor key with property of the students divided by the instructors
 */
 
 const getStats = () => {
