@@ -61,6 +61,15 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const findHighestRatedGamesByType = (type) => {
+  const ratings = boardGames[type].map((game) => {
+    return game.rating
+  })
+  return boardGames[type].at(ratings.indexOf(Math.max(...ratings)))
+}
+
+console.log(findHighestRatedGamesByType("strategy"))
+console.log(findHighestRatedGamesByType("party"))
 
 /*
 Level 3
