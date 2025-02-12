@@ -167,7 +167,17 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const makeGroceryList = () => {
+  return getToppings().reduce((groceryList, topping) => {
+    const cakesWithTopping = cakes.filter((cake) => {
+      return cake.toppings.includes(topping)
+    })
+    groceryList[topping] = cakesWithTopping.length
+    return groceryList
+  }, {})
+}
 
+console.log(makeGroceryList())
 
 /*
 Level 6
