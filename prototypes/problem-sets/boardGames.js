@@ -96,6 +96,9 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use reduce to sum the total rating of all of the games of the given type
+  2. Return the totalScore divided by the total amount of games of the given type
 */
 
 const averageScoreByType = (type) => {
