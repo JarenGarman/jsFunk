@@ -90,7 +90,7 @@ Annotation:
 */
 
 const findLetterCounts = () => {
-  const chars = sentence.split('')
+  const chars = sentence.toLowerCase().split('')
   return chars.reduce((letterCounts, char) => {
     if (letterCounts[char]) {
       letterCounts[char]++
@@ -117,7 +117,7 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-// module.exports = {
-//   countLetters, 
-//   findLetterCounts
-// }
+module.exports = {
+  countLetters,
+  findLetterCounts
+}
