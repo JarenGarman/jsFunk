@@ -28,6 +28,13 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getClassrooms = () => {
+  return classrooms.filter((classroom) => {
+    return classroom.program === 'FE'
+  })
+}
+
+console.log(getClassrooms())
 
 /*
 Level 2
