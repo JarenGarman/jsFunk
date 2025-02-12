@@ -1,4 +1,4 @@
-const { classrooms } = require('../datasets/classrooms');
+const { classrooms } = require('../datasets/classrooms')
 
 // To run the code you've written in this file, use node prototypes/problem-sets/classrooms.js
 
@@ -9,14 +9,14 @@ console.log('Running classrooms.js')
 /*
 Level 1
 
-Code: 
+Code:
   Write a function called "getClassrooms" that returns an array of just the front-end classrooms.
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(getClassrooms())
-    should print --> 
+    should print -->
       [
         { roomLetter: 'A', program: 'FE', capacity: 32 },
         { roomLetter: 'C', program: 'FE', capacity: 27 },
@@ -25,42 +25,42 @@ e.g.
       ]
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 2
 
-Code: 
+Code:
   Write a function called "getCapacities" that returns an object where the keys are 'feCapacity' and 'beCapacity', and the values are the total capacity for all classrooms in each program.
 
 Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(getCapacities())
-    should print -->   
+    should print -->
       {
         feCapacity: 110,
         beCapacity: 96
       }
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 3
 
-Code: 
+Code:
   Write a function called "sortByCapacity" that returns an array of classrooms sorted by their capacity (least capacity to greatest)
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(sortByCapacity())
-    should print -->  
+    should print -->
       [
         {
           roomLetter: "H",
@@ -83,22 +83,22 @@ e.g.
       ]
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
-  
+
 /*
 Level 4
 
-Code: 
+Code:
   Refactor your "getClassrooms" function from Level 1 so that it takes in an argument of either 'FE' or 'BE' and returns an array of just those classrooms.
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(getClassrooms("FE"))
-    should print --> 
+    should print -->
       [
         { roomLetter: 'A', program: 'FE', capacity: 32 },
         { roomLetter: 'C', program: 'FE', capacity: 27 },
@@ -107,7 +107,7 @@ e.g.
       ]
 e.g.
   console.log(getClassrooms("BE"))
-    should print --> 
+    should print -->
       [
         { roomLetter: 'B', program: 'BE', capacity: 29 },
         { roomLetter: 'D', program: 'BE', capacity: 30 },
@@ -116,21 +116,21 @@ e.g.
       ]
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 5
 
-Code: 
+Code:
   Refactor your "sortByCapacity" function from Level 3 so that it takes in the array to be sorted as an argument. It should still return an array of the classrooms sorted by their capacity (least capacity to greatest)
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(sortByCapacity(classrooms))
-    should print --> 
+    should print -->
       [
         {
           roomLetter: "H",
@@ -153,20 +153,20 @@ e.g.
       ]
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 /*
 Level 6
 
-Code: 
+Code:
   Write a function called "filterAndSortClassrooms".  This function should take in an argument of "FE" or "BE".  The function should return an array of only BE or FE classrooms, sorted by capacity (least to greatest).
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(filterAndSortClassrooms("BE"))
-    should print --> 
+    should print -->
       [
         {
           roomLetter: "H",
@@ -176,13 +176,13 @@ e.g.
           roomLetter: "F",
           program: "BE",
           capacity: 19
-        }, 
+        },
         ...etc
       ]
 
 e.g.
   console.log(filterAndSortClassrooms("FE"))
-    should print --> 
+    should print -->
       [
         {
           roomLetter: "E",
@@ -197,15 +197,15 @@ e.g.
       ]
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 7
 
-Code: 
-  Did you write out logic and iteration for Level 6's "filterAndSortClassrooms" function?  
+Code:
+  Did you write out logic and iteration for Level 6's "filterAndSortClassrooms" function?
   If so, refactor that function so that it simply uses the logic you've already written in your "getClassrooms" and "sortByCapacity" functions.
 
 Hint:
@@ -214,11 +214,11 @@ Hint:
   - Invoke sortByCapacity, passing in the filtered array you get from getClassrooms
   - Return the sorted, filted array
 
-Invoke: 
+Invoke:
   After refactoring, invoke your function again to ensure you're getting the expected results.
 e.g.
   console.log(filterAndSortClassrooms("BE"))
-    should print --> 
+    should print -->
       [
         {
           roomLetter: "H",
@@ -228,13 +228,13 @@ e.g.
           roomLetter: "F",
           program: "BE",
           capacity: 19
-        }, 
+        },
         ...etc
       ]
 
 e.g.
   console.log(filterAndSortClassrooms("FE"))
-    should print --> 
+    should print -->
       [
         {
           roomLetter: "E",
@@ -262,13 +262,9 @@ Test:
   * Refactor as needed until all Classroom tests are passing
 
 Annotation:
-  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions. 
-  Take notes on the error messages that led you to fixing those details. 
+  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
+  Take notes on the error messages that led you to fixing those details.
 */
-
-
-
-
 
 // module.exports = {
 //   getClassrooms,

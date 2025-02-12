@@ -7,8 +7,8 @@ const classrooms = [
   { roomLetter: 'F', program: 'BE', capacity: 19 },
   { roomLetter: 'G', program: 'FE', capacity: 29 },
   { roomLetter: 'H', program: 'BE', capacity: 18 }
-];
+]
 
 module.exports = {
   classrooms
-};
+}
