@@ -248,6 +248,9 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use getClassrooms to get array of classrooms within the program
+  2. Use sortByCapacity to sort this array
 */
 
 const filterAndSortClassrooms = (program) => {
