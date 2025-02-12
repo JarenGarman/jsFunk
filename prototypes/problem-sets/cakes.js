@@ -165,6 +165,10 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Reduce over the return value of the getToppings function from level 4 to create a new object
+  2. Use filter to create a new array of cakes that require the particular topping
+  3. Add the topping to the grocery list with a property of the length of that array
 */
 
 const makeGroceryList = () => {
