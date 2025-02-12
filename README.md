@@ -69,7 +69,7 @@ If you'd like to keep track of your progress, feel free to use the checklist bel
 - [X] crafting
 - [X] plants
 - [X] sentence
-- [ ] mods
+- [X] mods
 - [ ] boardGames
 - [ ] bosses
 - [ ] cakes
