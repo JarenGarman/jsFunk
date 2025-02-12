@@ -62,6 +62,9 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Add second data param
+  2. Replace references to signatureMove with data
 */
 
 console.log(getBossData("scar", "archnemesis"))
