@@ -56,6 +56,6 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-// module.exports = {
-//   getStats
-// }
+module.exports = {
+  getStats
+}
