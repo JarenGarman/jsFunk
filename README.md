@@ -68,7 +68,7 @@ If you'd like to keep track of your progress, feel free to use the checklist bel
 - [X] task
 - [X] crafting
 - [X] plants
-- [ ] sentence
+- [X] sentence
 - [ ] mods
 - [ ] boardGames
 - [ ] bosses
