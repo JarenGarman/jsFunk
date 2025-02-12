@@ -127,6 +127,18 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getToppings = () => {
+  return cakes.reduce((uniqToppings, cake) => {
+    cake.toppings.forEach((topping) => {
+      if (!uniqToppings.includes(topping)) {
+        uniqToppings.push(topping)
+      }
+    })
+    return uniqToppings
+  }, [])
+}
+
+console.log(getToppings())
 
 /*
 Level 5
