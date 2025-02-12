@@ -30,13 +30,13 @@ Annotate:
   1. Filter classrooms based on if the program is equal to FE
 */
 
-const getClassrooms = () => {
+const getClassrooms = (program) => {
   return classrooms.filter((classroom) => {
-    return classroom.program === 'FE'
+    return classroom.program === program
   })
 }
 
-console.log(getClassrooms())
+// console.log(getClassrooms())
 
 /*
 Level 2
@@ -160,6 +160,8 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+console.log(getClassrooms("FE"))
+console.log(getClassrooms("BE"))
 
 /*
 Level 5
