@@ -71,7 +71,7 @@ If you'd like to keep track of your progress, feel free to use the checklist bel
 - [X] sentence
 - [X] mods
 - [X] boardGames
-- [ ] bosses
+- [X] bosses
 - [ ] cakes
 - [ ] classrooms
 - [ ] books
