@@ -82,6 +82,11 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use split to create an array of individual chars
+  2. Use reduce to create a new object that will hold our letter counts
+  3. If the key of the current letter exists, add one to it
+  4. Else, create the key with an initial value of 1
 */
 
 const findLetterCounts = () => {
