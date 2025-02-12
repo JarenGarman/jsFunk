@@ -32,7 +32,7 @@ Annotate:
 const getStockCounts = () => {
   return cakes.map((cake) => {
     return {
-      cakeFlavor: cake.cakeFlavor,
+      flavor: cake.cakeFlavor,
       inStock: cake.inStock
     }
   })
@@ -197,10 +197,10 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-// module.exports = {
-//   getStockCounts,
-//   getInStock,
-//   doInventory,
-//   getToppings,
-//   makeGroceryList
-// }
+module.exports = {
+  getStockCounts,
+  getInStock,
+  doInventory,
+  getToppings,
+  makeGroceryList
+}
