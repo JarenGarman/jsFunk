@@ -58,6 +58,28 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getCapacities = () => {
+  const feClassrooms = classrooms.filter((classroom) => {
+    return classroom.program === 'FE'
+  })
+  const feCapacity = feClassrooms.reduce((capacity, classroom) => {
+    capacity += classroom.capacity
+    return capacity
+  }, 0)
+  const beClassrooms = classrooms.filter((classroom) => {
+    return classroom.program === 'BE'
+  })
+  const beCapacity = beClassrooms.reduce((capacity, classroom) => {
+    capacity += classroom.capacity
+    return capacity
+  }, 0)
+  return {
+    feCapacity,
+    beCapacity
+  }
+}
+
+console.log(getCapacities())
 
 /*
 Level 3
