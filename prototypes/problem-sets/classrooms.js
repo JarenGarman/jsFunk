@@ -309,7 +309,8 @@ e.g.
 
 */
 
-
+console.log(filterAndSortClassrooms("BE"))
+console.log(filterAndSortClassrooms("FE"))
 
 /*
 Level 8
