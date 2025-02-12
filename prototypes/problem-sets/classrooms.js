@@ -56,6 +56,9 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+  1. Use filter to create two new arrays for each of fe and be classrooms
+  2. Use reduce to sum the capacities of each of these classrooms
+  3. Return a new object with these capacities
 */
 
 const getCapacities = () => {
