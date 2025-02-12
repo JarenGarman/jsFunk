@@ -98,7 +98,16 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const averageScoreByType = (type) => {
+  const totalScore = boardGames[type].reduce((totalScore, game) => {
+    totalScore += game.rating
+    return totalScore
+  }, 0)
+  return totalScore / boardGames[type].length
+}
 
+console.log(averageScoreByType("strategy"))
+console.log(averageScoreByType("childrens"))
 
 /*
 Level 4
