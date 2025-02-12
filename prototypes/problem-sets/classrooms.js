@@ -121,13 +121,13 @@ Annotation:
   1. Use sort to compare the capacities of adjacent classrooms and sort accordingly
 */
 
-const sortByCapacity = () => {
+const sortByCapacity = (classrooms) => {
   return classrooms.sort((a, b) => {
     return a.capacity - b.capacity
   })
 }
 
-console.log(sortByCapacity())
+// console.log(sortByCapacity())
 
 /*
 Level 4
@@ -201,6 +201,8 @@ e.g.
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
+
+console.log(sortByCapacity(classrooms))
 
 /*
 Level 6
