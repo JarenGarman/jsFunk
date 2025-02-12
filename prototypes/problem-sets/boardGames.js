@@ -132,6 +132,10 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Create a new array of only games that fit the requirements in the params
+  2. Use reduce to calculate the total sum of the remaining game ratings
+  3. Return the total divided by the length of the filtered games
 */
 
 const averageScoreByTypeAndPlayers = (type, maxPlayers) => {
