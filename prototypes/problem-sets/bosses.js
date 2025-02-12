@@ -26,6 +26,8 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Return an interpolated string using the name and signatureMove
 */
 
 const getBossData = (boss) => {
