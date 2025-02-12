@@ -27,6 +27,16 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getStockCounts = () => {
+  return cakes.map((cake) => {
+    return {
+      cakeFlavor: cake.cakeFlavor,
+      inStock: cake.inStock
+    }
+  })
+}
+
+console.log(getStockCounts())
 
 /*
 Level 2
