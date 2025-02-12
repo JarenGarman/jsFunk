@@ -84,6 +84,19 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const findLetterCounts = () => {
+  const chars = sentence.split('')
+  return chars.reduce((letterCounts, char) => {
+    if (letterCounts[char]) {
+      letterCounts[char]++
+    } else {
+      letterCounts[char] = 1
+    }
+    return letterCounts
+  }, {})
+}
+
+console.log(findLetterCounts())
 
 /*
 Level 3
