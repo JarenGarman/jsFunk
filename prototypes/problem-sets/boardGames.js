@@ -1,4 +1,4 @@
-const { boardGames } = require('../datasets/boardGames');
+const { boardGames } = require('../datasets/boardGames')
 
 // To run the code you've written in this file, use node prototypes/problem-sets/boardGames.js
 
@@ -112,11 +112,9 @@ Annotation:
   Take notes on the error messages that led you to fixing those details. 
 */
 
-
-
 // module.exports = {
 //   listGames,
 //   findHighestRatedGamesByType,
 //   averageScoreByType,
 //   averageScoreByTypeAndPlayers
-// };
+// }
