@@ -70,7 +70,7 @@ If you'd like to keep track of your progress, feel free to use the checklist bel
 - [X] plants
 - [X] sentence
 - [X] mods
-- [ ] boardGames
+- [X] boardGames
 - [ ] bosses
 - [ ] cakes
 - [ ] classrooms
