@@ -22,6 +22,14 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getBeerCount = () => {
+  return breweries.reduce((totalCount, brewery) => {
+    totalCount += brewery.beers.length
+    return totalCount
+  }, 0)
+}
+
+console.log(getBeerCount())
 
 /*
 Level 2
