@@ -20,6 +20,9 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Map through each weather object
+  2. Add the temp high and low and divide by 2
 */
 
 const getAverageTemps = () => {
