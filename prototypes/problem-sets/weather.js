@@ -51,6 +51,9 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Filter the weather to get only the locations where the type includes sunny
+  2. Map these locations out to a new interpolated string using the name and type
 */
 
 const findSunnySpots = () => {
