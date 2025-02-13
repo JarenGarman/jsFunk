@@ -85,8 +85,14 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getByGenre = (books, genre) => {
+  return books.filter((book) => {
+    return book.genre === genre
+  })
+}
 
-
+console.log(getByGenre(books, "Fiction"))
+console.log(getByGenre(books, "Satire"))
 
 /*
 Level 3
