@@ -24,6 +24,9 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use filter to create two new arrays, split by visited and not visited
+  2. Return a new object with properties of the respective arrays mapped to just the park name
 */
 
 const getParkVisitList = () => {
