@@ -221,6 +221,8 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Replace return value with an interpolated string using the params and old return value
 */
 
 console.log(getAverageTempByType("sunny", "high"))
