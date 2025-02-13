@@ -89,7 +89,15 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getSingleBreweryBeerCount = (breweryName) => {
+  const brewery = breweries.find((brewery) => {
+    return brewery.name === breweryName
+  })
+  return brewery.beers.length
+}
 
+console.log(getSingleBreweryBeerCount('Ratio Beerworks'))
+console.log(getSingleBreweryBeerCount("Platt Park Brewing Co."))
 
 /*
 Level 4
