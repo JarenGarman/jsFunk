@@ -70,6 +70,9 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Map over each park to transform it into an object
+  2. Key of the park location with a property of the park name
 */
 
 const getParkInEachState = () => {
