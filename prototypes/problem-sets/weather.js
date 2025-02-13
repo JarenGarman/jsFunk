@@ -89,7 +89,14 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const findHighestHumidity = () => {
+  const humidities = weather.map((weather) => {
+    return weather.humidity
+  })
+  return weather.at(humidities.indexOf(Math.max(...humidities)))
+}
 
+console.log(findHighestHumidity())
 
 /*
 Level 4
