@@ -111,6 +111,10 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Reduce over nationalParks to create a new array
+  2. Iterate over each activity
+  3. If the activity is not already in the new array, add it
 */
 
 const getParkActivities = () => {
