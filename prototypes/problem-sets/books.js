@@ -187,7 +187,19 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getNewBooks = () => {
+  const newBooks = books.filter((book) => {
+    return book.published >= 1990 && book.published < 2010
+  })
+  return newBooks.map((book) => {
+    return {
+      title: book.title,
+      year: book.published
+    }
+  })
+}
 
+console.log(getNewBooks())
 
 /*
 Level 6
