@@ -1,4 +1,4 @@
-const { instructors, cohorts } = require('../datasets/turing');
+const { instructors, cohorts } = require('../datasets/turing')
 
 // To run the code you've written in this file, use node prototypes/spicy-problem-sets/turing.js
 
@@ -9,14 +9,14 @@ console.log('Running turing.js')
 /*
 Level 1
 
-Code: 
+Code:
   Write a function called "studentsForEachInstructor" that returns an array of instructors where each instructor is an object with a name and the count of students in their module.
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(studentsForEachInstructor())
-    should print -->      
+    should print -->
       [
         { name: 'Pam', studentCount: 21 },
         { name: 'Brittany', studentCount: 21 },
@@ -26,21 +26,21 @@ e.g.
       ]
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 2
 
-Code: 
+Code:
   Write a function called "studentsPerInstructor" that returns an object of how many students per teacher there are in each cohort .
 
 Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(studentsPerInstructor())
-    should print -->   
+    should print -->
       {
         cohort1806: 15,
         cohort1804: 7,
@@ -49,21 +49,21 @@ e.g.
       }
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
 /*
 Level 3
 
-Code: 
+Code:
   Write a function called "modulesPerTeacher" that returns an object where each key is an instructor name and each value is an array of the modules they can teach based on their skills.
 
-Invoke: 
-  To print the value your function returns and confirm it is correct, invoke your function within a console.log().  
+Invoke:
+  To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(modulesPerTeacher())
-    should print -->      
+    should print -->
       {
         Pam: [2, 4],
         Brittany: [2, 4],
@@ -77,7 +77,7 @@ e.g.
       }
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
@@ -85,14 +85,14 @@ Annotation:
 /*
 Level 4
 
-Code: 
+Code:
   Write a function called "curriculumPerTeacher" that returns an object where each key is a curriculum topic and each value is an array of instructors who teach that topic.
 
-Invoke: 
-  To print the value your function returns and confirm it is correct, invoke your function within a console.log().  
+Invoke:
+  To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(curriculumPerTeacher(\))
-    should print -->      
+    should print -->
       {
         html: ["Travis", "Louisa"],
         css: ["Travis", "Louisa"],
@@ -108,9 +108,9 @@ e.g.
       }
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
-  
+
 /*
 Level 5
 
@@ -121,15 +121,13 @@ Test:
   * Refactor as needed until all Turing tests are passing
 
 Annotation:
-  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions. 
-  Take notes on the error messages that led you to fixing those details. 
+  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
+  Take notes on the error messages that led you to fixing those details.
 */
-
-
 
 // module.exports = {
 //   studentsForEachInstructor,
 //   studentsPerInstructor,
 //   modulesPerTeacher,
 //   curriculumPerTeacher
-// };
+// }
