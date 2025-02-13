@@ -134,6 +134,9 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Filter through the weather param to find only those with type that includes type param
+  2. Map those filtered objects out to a new interpolated string using location and type
 */
 
 const findByType = (weather, type) => {
