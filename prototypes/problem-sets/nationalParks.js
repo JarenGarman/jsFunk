@@ -113,7 +113,18 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getParkActivities = () => {
+  return nationalParks.reduce((activities, park) => {
+    park.activities.forEach((activity) => {
+      if (!activities.includes(activity)) {
+        activities.push(activity)
+      }
+    })
+    return activities
+  }, [])
+}
 
+console.log(getParkActivities())
 
 /*
 Level 4
