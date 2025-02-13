@@ -20,6 +20,9 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use reduce to find the sum of all beers
+  2. Use brewery.beers.length to find the number of beers at a brewery
 */
 
 const getBeerCount = () => {
