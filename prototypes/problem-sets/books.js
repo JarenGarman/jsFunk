@@ -185,6 +185,9 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Filter the books to find only the ones published between 1990 and 2009
+  2. Map over the filtered books to turn them into objects with just the title and year
 */
 
 const getNewBooks = () => {
