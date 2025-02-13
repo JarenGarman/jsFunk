@@ -22,6 +22,13 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getAverageTemps = () => {
+  return weather.map((weather) => {
+    return (weather.temperature.high + weather.temperature.low) / 2
+  })
+}
+
+console.log(getAverageTemps())
 
 /*
 Level 2
