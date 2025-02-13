@@ -20,8 +20,19 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use reduce to find the sum of all beers
+  2. Use brewery.beers.length to find the number of beers at a brewery
 */
 
+const getBeerCount = () => {
+  return breweries.reduce((totalCount, brewery) => {
+    totalCount += brewery.beers.length
+    return totalCount
+  }, 0)
+}
+
+console.log(getBeerCount())
 
 /*
 Level 2
@@ -42,8 +53,21 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Map over the breweries to transform them into a new object
+  2. Use brewery name and beers.length for the properties
 */
 
+const getBreweryBeerCount = () => {
+  return breweries.map((brewery) => {
+    return {
+      name: brewery.name,
+      beerCount: brewery.beers.length
+    }
+  })
+}
+
+console.log(getBreweryBeerCount())
 
 /*
 Level 3
@@ -63,9 +87,20 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use find to get the brewery object with a matching name to the param
+  2. Return the beers.length
 */
 
+const getSingleBreweryBeerCount = (breweryName) => {
+  const brewery = breweries.find((brewery) => {
+    return brewery.name === breweryName
+  })
+  return brewery.beers.length
+}
 
+console.log(getSingleBreweryBeerCount('Ratio Beerworks'))
+console.log(getSingleBreweryBeerCount("Platt Park Brewing Co."))
 
 /*
 Level 4
@@ -87,7 +122,26 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Find the brewery by param name
+  2. Map out the beers to a new array of just abvs
+  3. Find the max abv
+  4. Find the index of the max abv
+  5. Return the beers array item of the same index
 */
+
+const findHighestAbvBeer = (breweryName) => {
+  const brewery = breweries.find((brewery) => {
+    return brewery.name === breweryName
+  })
+  const abvs = brewery.beers.map((beer) => {
+    return beer.abv
+  })
+  return brewery.beers.at(abvs.indexOf(Math.max(...abvs)))
+}
+
+console.log(findHighestAbvBeer("Ratio Beerworks"))
+console.log(findHighestAbvBeer("Little Machine Brew"))
 
 /*
 Level 5
@@ -103,9 +157,25 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Map out the breweries into an array of only the highest abv beer, using the previous function
+  2. Map out this array into just the abvs
+  3. Find the max abv
+  4. Find the index of the max abv
+  5. Return the highestPer array item of the same index
 */
 
+const findHighestAbvAll = () => {
+  const highestPer = breweries.map((brewery) => {
+    return findHighestAbvBeer(brewery.name)
+  })
+  const highestAbvs = highestPer.map((beer) => {
+    return beer.abv
+  })
+  return highestPer.at(highestAbvs.indexOf(Math.max(...highestAbvs)))
+}
 
+console.log(findHighestAbvAll())
 
 /*
 Level 6
@@ -121,10 +191,10 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-// module.exports = {
-//   getBeerCount,
-//   getBreweryBeerCount,
-//   getSingleBreweryBeerCount,
-//   findHighestAbvBeer,
-//   findHighestAbvAll
-// }
+module.exports = {
+  getBeerCount,
+  getBreweryBeerCount,
+  getSingleBreweryBeerCount,
+  findHighestAbvBeer,
+  findHighestAbvAll
+}
