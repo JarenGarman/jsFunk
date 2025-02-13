@@ -55,6 +55,16 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getBreweryBeerCount = () => {
+  return breweries.map((brewery) => {
+    return {
+      name: brewery.name,
+      beerCount: brewery.beers.length
+    }
+  })
+}
+
+console.log(getBreweryBeerCount())
 
 /*
 Level 3
