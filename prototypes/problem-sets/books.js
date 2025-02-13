@@ -29,8 +29,11 @@ Annotate:
 */
 
 const removeViolence = (books) => {
-  return books.filter((book) => {
+  const violentBooks = books.filter((book) => {
     return book.genre !== 'Horror' && book.genre !== 'True Crime'
+  })
+  return violentBooks.map((book) => {
+    return book.title
   })
 }
 
@@ -218,8 +221,8 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-// module.exports = {
-//   removeViolence,
-//   getByGenre,
-//   getNewBooks,
-// }
+module.exports = {
+  removeViolence,
+  getByGenre,
+  getNewBooks,
+}
