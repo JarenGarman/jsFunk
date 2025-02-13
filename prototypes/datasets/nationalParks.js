@@ -14,7 +14,7 @@ const nationalParks = [
     name: "Yellowstone",
     visited: false,
     location: "Wyoming",
-     activities: [
+    activities: [
       "hiking",
       "boating",
       "watching wildlife",
@@ -24,7 +24,7 @@ const nationalParks = [
     name: "Glacier",
     visited: false,
     location: "Montana",
-     activities: [
+    activities: [
       "hiking",
       "boating",
       "cross-country skiing",
@@ -34,7 +34,7 @@ const nationalParks = [
     name: "Acadia",
     visited: true,
     location: "Maine",
-     activities: [
+    activities: [
       "hiking",
       "fishing",
       "swimming",
@@ -45,7 +45,7 @@ const nationalParks = [
     name: "Zion",
     visited: true,
     location: "Utah",
-     activities: [
+    activities: [
       "hiking",
       "canyoneering",
       "backpacking",
@@ -56,14 +56,14 @@ const nationalParks = [
     name: "Everglades",
     visited: false,
     location: "Florida",
-     activities: [
+    activities: [
       "hiking",
       "boating",
       "fishing",
       "bird watching"
     ],
   }
-];
+]
 
 module.exports = {
   nationalParks
