@@ -124,6 +124,19 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const findHighestAbvBeer = (breweryName) => {
+  const brewery = breweries.find((brewery) => {
+    return brewery.name === breweryName
+  })
+  const abvs = brewery.beers.map((beer) => {
+    return beer.abv
+  })
+  return brewery.beers.at(abvs.indexOf(Math.max(...abvs)))
+}
+
+console.log(findHighestAbvBeer("Ratio Beerworks"))
+console.log(findHighestAbvBeer("Little Machine Brew"))
+
 /*
 Level 5
 
