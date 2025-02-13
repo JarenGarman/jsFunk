@@ -23,6 +23,9 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Filter through the books param
+  2. Remove any with a genre of Horror or True Crime
 */
 
 const removeViolence = (books) => {
