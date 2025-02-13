@@ -157,6 +157,12 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Map out the breweries into an array of only the highest abv beer, using the previous function
+  2. Map out this array into just the abvs
+  3. Find the max abv
+  4. Find the index of the max abv
+  5. Return the highestPer array item of the same index
 */
 
 const findHighestAbvAll = () => {
