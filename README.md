@@ -75,7 +75,7 @@ If you'd like to keep track of your progress, feel free to use the checklist bel
 - [X] cakes
 - [X] classrooms
 - [X] books
-- [ ] weather
+- [X] weather
 - [ ] nationalParks
 - [ ] breweries
 

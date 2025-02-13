@@ -124,12 +124,12 @@ e.g.
   console.log(findByType(weather, "cloudy"))
     should print -->
       [
-        'New York, New York is cloudy',
-        'Portland, Oregon is cloudy',
-        'Boston, Massachusetts is cloudy',
-        'Miami, Florida is partly cloudy',
-        'Phoenix, Arizona is cloudy',
-        'Anchorage, Alaska is cloudy'
+        'New York, New York is cloudy.',
+        'Portland, Oregon is cloudy.',
+        'Boston, Massachusetts is cloudy.',
+        'Miami, Florida is partly cloudy.',
+        'Phoenix, Arizona is cloudy.',
+        'Anchorage, Alaska is cloudy.'
       ]
 
 Annotate:
@@ -243,10 +243,10 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-// module.exports = {
-//   getAverageTemps,
-//   findSunnySpots,
-//   findHighestHumidity,
-//   findByType,
-//   getAverageTempByType
-// }
+module.exports = {
+  getAverageTemps,
+  findSunnySpots,
+  findHighestHumidity,
+  findByType,
+  getAverageTempByType
+}
