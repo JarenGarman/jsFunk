@@ -87,6 +87,11 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Create a new array of just weather humidities
+  2. Find the max humidity
+  3. Find the index of that max
+  4. Find the corresponding weather object in the original array
 */
 
 const findHighestHumidity = () => {
