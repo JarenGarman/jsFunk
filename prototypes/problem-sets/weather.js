@@ -136,6 +136,17 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const findByType = (weather, type) => {
+  const matchingWeather = weather.filter((weather) => {
+    return weather.type.includes(type)
+  })
+  return matchingWeather.map((weather) => {
+    return `${weather.location} is ${weather.type}.`
+  })
+}
+
+console.log(findByType(weather, "sunny"))
+console.log(findByType(weather, "cloudy"))
 
 /*
 Level 5
