@@ -187,7 +187,7 @@ const getAverageTempByType = (type, highOrLow) => {
     totalTemp += weather.temperature[highOrLow]
     return totalTemp
   }, 0)
-  return totalTemp / typeWeather.length
+  return `The average ${highOrLow} for ${type} locations is ${totalTemp / typeWeather.length} degrees.`
 }
 
 console.log(getAverageTempByType("sunny", "high"))
@@ -223,6 +223,9 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+console.log(getAverageTempByType("sunny", "high"))
+console.log(getAverageTempByType("sunny", "low"))
+console.log(getAverageTempByType("cloudy", "low"))
 
 /*
 Level 7
