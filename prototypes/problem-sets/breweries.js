@@ -122,6 +122,12 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Find the brewery by param name
+  2. Map out the beers to a new array of just abvs
+  3. Find the max abv
+  4. Find the index of the max abv
+  5. Return the beers array item of the same index
 */
 
 const findHighestAbvBeer = (breweryName) => {
