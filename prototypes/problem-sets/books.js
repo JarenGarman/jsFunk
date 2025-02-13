@@ -159,6 +159,8 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Add logical and operator checking if the published year is greater than the year param
 */
 
 console.log(getByGenre(books, "Fiction", 1954))
