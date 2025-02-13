@@ -126,6 +126,9 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Set the current return value to a variable
+  2. Call map on the variable to turn the book objects into their titles
 */
 
 console.log(getByGenre(books, "Fiction"))
