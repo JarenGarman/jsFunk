@@ -53,6 +53,9 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Map over the breweries to transform them into a new object
+  2. Use brewery name and beers.length for the properties
 */
 
 const getBreweryBeerCount = () => {
