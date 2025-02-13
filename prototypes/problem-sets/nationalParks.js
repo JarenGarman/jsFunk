@@ -72,6 +72,13 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getParkInEachState = () => {
+  return nationalParks.map((park) => {
+    return { [park.location]: park.name }
+  })
+}
+
+console.log(getParkInEachState())
 
 /*
 Level 3
