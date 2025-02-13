@@ -26,6 +26,24 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getParkVisitList = () => {
+  const visited = nationalParks.filter((park) => {
+    return park.visited
+  })
+  const notVisited = nationalParks.filter((park) => {
+    return !park.visited
+  })
+  return {
+    parksToVisit: notVisited.map((park) => {
+      return park.name
+    }),
+    parksVisited: visited.map((park) => {
+      return park.name
+    })
+  }
+}
+
+console.log(getParkVisitList())
 
 /*
 Level 2
