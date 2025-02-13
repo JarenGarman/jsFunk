@@ -173,6 +173,10 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Filter through the weather to find matching type
+  2. Use reduce to calculate the sum of all highs or lows
+  3. Return the total divided by the length of the typeWeather array
 */
 
 const getAverageTempByType = (type, highOrLow) => {
