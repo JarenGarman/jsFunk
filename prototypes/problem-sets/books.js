@@ -1,4 +1,4 @@
-const { books } = require('../datasets/books');
+const { books } = require('../datasets/books')
 
 // To run the code you've written in this file, use node prototypes/problem-sets/books.js
 
@@ -9,35 +9,47 @@ console.log('Running books.js')
 /*
 Level 1
 
-Code: 
+Code:
   Write a function called "removeViolence" that takes in the books data as an argument and returns an array of all book titles that are not horror or true crime.
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(removeViolence(books))
-    should print --> 
+    should print -->
      [
         '1984', 'The Great Gatsby', 'Lord of the Flies', 'Harry Potter and the Sorcerer\'s Stone', 'The Hitchhiker\'s Guide to the Galaxy', 'Flowers for Algernon', 'Slaughterhouse-Five', 'The Handmaid\'s Tale', 'The Metamorphosis', 'Brave New World', 'Life of Pi', 'The Curious Incident of the Dog in the Night - Time', 'The Bell Jar', 'Catch-22', 'Treasure Island'
       ]
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Filter through the books param
+  2. Remove any with a genre of Horror or True Crime
 */
 
+const removeViolence = (books) => {
+  const violentBooks = books.filter((book) => {
+    return book.genre !== 'Horror' && book.genre !== 'True Crime'
+  })
+  return violentBooks.map((book) => {
+    return book.title
+  })
+}
 
+console.log(removeViolence(books))
 
 /*
 Level 2
 
-Code: 
+Code:
   Write a function called "getByGenre" that takes 2 arguments: the books data, and a specified genre.  The function should return an array of objects containing all books of that genre.
 
 Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(getByGenre(books, "Fiction"))
-    should print -->   
+    should print -->
     [
       {
         title: 'The Great Gatsby',
@@ -62,7 +74,7 @@ e.g.
 
 e.g.
   console.log(getByGenre(books, "Satire"))
-    should print -->   
+    should print -->
     [
       {
         title: 'Catch-22',
@@ -73,23 +85,35 @@ e.g.
     ]
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Filter through the books param
+  2. Only include books that share the genre from the param
 */
 
+const getByGenre = (books, genre, year) => {
+  const booksByGenre = books.filter((book) => {
+    return book.genre === genre && book.published > year
+  })
+  return booksByGenre.map((book) => {
+    return book.title
+  })
+}
 
-
+// console.log(getByGenre(books, "Fiction"))
+// console.log(getByGenre(books, "Satire"))
 
 /*
 Level 3
 
-Code: 
+Code:
   Modify your "getByGenre" function so that it doesn't return the entire book object, only the title.
 
 Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(getByGenre(books, "Fiction"))
-    should print -->   
+    should print -->
     [
       'The Great Gatsby',
       'Lord of the Flies',
@@ -100,55 +124,62 @@ e.g.
 
 e.g.
   console.log(getByGenre(books, "Satire"))
-    should print -->   
+    should print -->
     ['Catch-22']
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible.  
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Set the current return value to a variable
+  2. Call map on the variable to turn the book objects into their titles
 */
 
-
+// console.log(getByGenre(books, "Fiction"))
+// console.log(getByGenre(books, "Satire"))
 
 /*
 Level 4
 
-Code: 
+Code:
   Modify your "getByGenre" function so that it takes in a third argument of a year and only returns the book titles for books published after that year.
 
 Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(getByGenre(books, "Fiction", 1954))
-    should print -->   
+    should print -->
     [ 'Life of Pi', 'The Bell Jar' ]
 
 e.g.
   console.log(getByGenre(books, "Science Fiction", 1950))
-    should print -->   
+    should print -->
     [
       "The Hitchhiker's Guide to the Galaxy",
       'Flowers for Algernon',
       'Slaughterhouse-Five',
       "The Handmaid's Tale"
     ]
-    
-Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible.  
-*/
-  
 
+Annotation:
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Add logical and operator checking if the published year is greater than the year param
+*/
+
+console.log(getByGenre(books, "Fiction", 1954))
+console.log(getByGenre(books, "Science Fiction", 1950))
 
 /*
 Level 5
 
-Code: 
+Code:
   Write a function called "getNewBooks" that returns an array of objects containing all books that were published in the 90's and 00's. Each object should have only a title property and a year property.
 
 Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(getNewBooks())
-    should print -->   
+    should print -->
     [
       { title: 'Harry Potter and the Sorcerer\'s Stone', year: 1997 },
       { title: 'Life of Pi', year: 2001 },
@@ -156,10 +187,25 @@ e.g.
     ]
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible.  
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Filter the books to find only the ones published between 1990 and 2009
+  2. Map over the filtered books to turn them into objects with just the title and year
 */
 
+const getNewBooks = () => {
+  const newBooks = books.filter((book) => {
+    return book.published >= 1990 && book.published < 2010
+  })
+  return newBooks.map((book) => {
+    return {
+      title: book.title,
+      year: book.published
+    }
+  })
+}
 
+console.log(getNewBooks())
 
 /*
 Level 6
@@ -171,14 +217,12 @@ Test:
   * Refactor as needed until all Books tests are passing
 
 Annotation:
-  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions. 
-  Take notes on the error messages that led you to fixing those details. 
+  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
+  Take notes on the error messages that led you to fixing those details.
 */
 
-
-
-// module.exports = {
-//   removeViolence,
-//   getByGenre,
-//   getNewBooks,
-// };
+module.exports = {
+  removeViolence,
+  getByGenre,
+  getNewBooks,
+}
