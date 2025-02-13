@@ -175,6 +175,21 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getAverageTempByType = (type, highOrLow) => {
+  const typeWeather = weather.filter((weather) => {
+    return weather.type === type
+  })
+  const totalTemp = typeWeather.reduce((totalTemp, weather) => {
+    totalTemp += weather.temperature[highOrLow]
+    return totalTemp
+  }, 0)
+  return totalTemp / typeWeather.length
+}
+
+console.log(getAverageTempByType("sunny", "high"))
+console.log(getAverageTempByType("sunny", "low"))
+console.log(getAverageTempByType("cloudy", "low"))
+
 /*
 Level 6
 
