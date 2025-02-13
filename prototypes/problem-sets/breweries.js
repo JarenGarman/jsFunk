@@ -159,7 +159,17 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const findHighestAbvAll = () => {
+  const highestPer = breweries.map((brewery) => {
+    return findHighestAbvBeer(brewery.name)
+  })
+  const highestAbvs = highestPer.map((beer) => {
+    return beer.abv
+  })
+  return highestPer.at(highestAbvs.indexOf(Math.max(...highestAbvs)))
+}
 
+console.log(findHighestAbvAll())
 
 /*
 Level 6
