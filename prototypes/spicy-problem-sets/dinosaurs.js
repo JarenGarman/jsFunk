@@ -27,6 +27,10 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Reduce over movies to create our resulting object
+  2. Filter the movie dinos to get only the awesome ones
+  3. Set the key of the movie title equal to the dinos array length
 */
 
 const countAwesomeDinosaurs = () => {
