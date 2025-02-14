@@ -29,6 +29,23 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const studentsForEachInstructor = () => {
+  const instructorModule = instructors.reduce((instructorModule, instructor) => {
+    instructorModule[instructor.name] = instructor.module
+    return instructorModule
+  }, {})
+  return instructors.map((instructor) => {
+    const module = cohorts.find((cohort) => {
+      return cohort.module === instructorModule[instructor.name]
+    })
+    return {
+      name: instructor.name,
+      studentCount: module.studentCount
+    }
+  })
+}
+
+console.log(studentsForEachInstructor())
 
 /*
 Level 2
