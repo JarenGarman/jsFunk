@@ -151,7 +151,7 @@ Code:
 Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
-  console.log(curriculumPerTeacher(\))
+  console.log(curriculumPerTeacher())
     should print -->
       {
         html: ["Travis", "Louisa"],
@@ -170,6 +170,28 @@ e.g.
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
+
+const curriculumPerTeacher = () => {
+  const topics = cohorts.reduce((topics, cohort) => {
+    cohort.curriculum.forEach((topic) => {
+      if (!topics.includes(topic)) {
+        topics.push(topic)
+      }
+    })
+    return topics
+  }, [])
+  return topics.reduce((curriculumPerTeacher, topic) => {
+    const topicTeachers = instructors.filter((instructor) => {
+      return instructor.teaches.includes(topic)
+    })
+    curriculumPerTeacher[topic] = topicTeachers.map((instructor) => {
+      return instructor.name
+    })
+    return curriculumPerTeacher
+  }, {})
+}
+
+console.log(curriculumPerTeacher())
 
 /*
 Level 5
