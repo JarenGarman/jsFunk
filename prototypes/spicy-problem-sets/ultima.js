@@ -22,6 +22,10 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Reduce over characters to create an array of unique weapons
+  2. Iterate over each weapon to add it to the array if it is not already present
+  3. Reduce over each eligible weapon to find the sum of all of the weapon damages
 */
 
 const getTotalDamage = () => {
