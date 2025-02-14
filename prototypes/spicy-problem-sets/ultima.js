@@ -24,7 +24,22 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getTotalDamage = () => {
+  const eligibleWeapons = characters.reduce((weapons, character) => {
+    character.weapons.forEach((weapon) => {
+      if (!weapons.includes(weapon)) {
+        weapons.push(weapon)
+      }
+    })
+    return weapons
+  }, [])
+  return eligibleWeapons.reduce((damage, weapon) => {
+    damage += weapons[weapon].damage
+    return damage
+  }, 0)
+}
 
+console.log(getTotalDamage())
 
 /*
 Level 2
