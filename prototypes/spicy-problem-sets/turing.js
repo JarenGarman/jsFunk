@@ -74,6 +74,16 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const studentsPerInstructor = () => {
+  return cohorts.reduce((studentsPer, cohort) => {
+    studentsPer[cohort.cohort] = cohort.studentCount / instructors.filter((instructor) => {
+      return instructor.module === cohort.module
+    }).length
+    return studentsPer
+  }, {})
+}
+
+console.log(studentsPerInstructor())
 
 /*
 Level 3
