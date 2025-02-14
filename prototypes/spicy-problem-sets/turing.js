@@ -169,6 +169,13 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use reduce to create a new array by iterating over the cohorts
+  2. Iterate over each topic to add it to the array if it is not already there
+  3. Reduce over this unique topics array to create a new object that will be our return value
+  4. Filter through the instructors to find only the ones who teach the topic
+  5. Map over the filtered instructors to get them by name
+  6. Set this as the property for the key of the topic
 */
 
 const curriculumPerTeacher = () => {
