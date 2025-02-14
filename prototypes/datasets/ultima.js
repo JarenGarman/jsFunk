@@ -24,10 +24,10 @@ const characters = [
     weapons: ['axe', 'halbred', 'magebane'],
     home: 'Trinsic',
   }
-];
+]
 
 const weapons = {
-  magebane : {
+  magebane: {
     damage: 9,
     range: 3
   },
