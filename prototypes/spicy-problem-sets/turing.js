@@ -27,6 +27,11 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use reduce to create a new object, key of instructor name and property of instructor module
+  2. map over the instructors to create the return array
+  3. Assign module to the module from the instructor
+  4. Return instructor name and module student count
 */
 
 const studentsForEachInstructor = () => {
