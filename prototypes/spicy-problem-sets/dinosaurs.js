@@ -78,6 +78,15 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Reduce over the movies to create a unique array of directors
+  2. Reduce over the directors to create our return object
+  3. Filter the movies to find only the ones belonging to that director
+  4. Iterate through each movie to calculate average age
+  5. Reduce over the cast to find the sum of all of their ages (year released - year born)
+  6. Divide the total by the number of cast members to find the average
+  7. Set that average (rounded down) to be the property with the key of the movie title
+  8. Add that object as the property for the key of the director
 */
 
 const averageAgePerMovie = () => {
