@@ -27,6 +27,10 @@ e.g.
 
 Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Reduce over stars to create an array of unique star colors
+  2. Reduce over the colors array to create our return object
+  3. Set the key of color equal to the stars of matching color
 */
 
 const getStarsByColor = () => {
