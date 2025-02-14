@@ -29,7 +29,17 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const countAwesomeDinosaurs = () => {
+  return movies.reduce((result, movie) => {
+    const aweDinos = movie.dinos.filter((dino) => {
+      return dinosaurs[dino].isAwesome
+    })
+    result[movie.title] = aweDinos.length
+    return result
+  }, {})
+}
 
+console.log(countAwesomeDinosaurs())
 
 /*
 Level 2
