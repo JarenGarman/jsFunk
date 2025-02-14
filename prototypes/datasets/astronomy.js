@@ -11,7 +11,7 @@ const constellations = {
     alternateNames: ['Ursa Minor', 'The Little Dipper', 'The Cub', 'The Little Bear'],
     starNames: ['Polaris', 'Kochab', 'Pherkad', 'Hadar', 'Delta', 'Epsilon Ursae Minoris', 'Lambda Ursae Minoris']
   }
-};
+}
 
 const stars = [
   {
@@ -91,7 +91,7 @@ const stars = [
     lightYearsFromEarth: 350,
     color: 'blue'
   }
-];
+]
 
 module.exports = {
   constellations,
