@@ -1,4 +1,4 @@
-const { dinosaurs, humans, movies } = require('../datasets/dinosaurs');
+const { dinosaurs, humans, movies } = require('../datasets/dinosaurs')
 
 // To run the code you've written in this file, use node prototypes/spicy-problem-sets/dinosaurs.js
 
@@ -9,14 +9,14 @@ console.log('Running dinosaurs.js')
 /*
 Level 1
 
-Code: 
+Code:
   Write a function called "countAwesomeDinosaurs" that returns an object where each key is a movie title and each value is the number of *awesome* dinosaurs in that movie.
 
-Invoke: 
+Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(countAwesomeDinosaurs())
-    should print -->  
+    should print -->
     {
       'Jurassic Park': 5,
       'The Lost World: Jurassic Park': 8,
@@ -26,7 +26,7 @@ e.g.
     }
 
 Annotate:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
 
@@ -34,14 +34,14 @@ Annotate:
 /*
 Level 2
 
-Code: 
+Code:
   Write a function called "averageAgePerMovie" that returns an object where each key is a movie director's name and each value is an object whose key is a movie's title and whose value is the average age of the cast on the release year of that movie.
 
 Invoke:
   To print the value your function returns and confirm it is correct, invoke your function within a console.log().
 e.g.
   console.log(averageAgePerMovie())
-    should print -->   
+    should print -->
       {
         'Steven Spielberg':
           {
@@ -63,10 +63,10 @@ e.g.
       }
 
 Annotation:
-  After you find a solution, write out the steps of that solution.  Break them down as much as possible. 
+  After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
-  
+
 /*
 Level 3
 
@@ -77,12 +77,11 @@ Test:
   * Refactor as needed until all dinosaurs tests are passing
 
 Annotation:
-  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions. 
-  Take notes on the error messages that led you to fixing those details. 
+  If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
+  Take notes on the error messages that led you to fixing those details.
 */
-
 
 // module.exports = {
 //   countAwesomeDinosaurs,
 //   averageAgePerMovie
-// };
+// }
