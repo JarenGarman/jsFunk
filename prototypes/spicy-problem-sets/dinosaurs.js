@@ -80,6 +80,31 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const averageAgePerMovie = () => {
+  const directors = movies.reduce((directors, movie) => {
+    if (!directors.includes(movie.director)) {
+      directors.push(movie.director)
+    }
+    return directors
+  }, [])
+  return directors.reduce((result, director) => {
+    const directorMovies = movies.filter((movie) => {
+      return movie.director === director
+    })
+    const averageAgeMovies = {}
+    directorMovies.forEach((movie) => {
+      const totalAge = movie.cast.reduce((totalAge, castMember) => {
+        totalAge += movie.yearReleased - humans[castMember].yearBorn
+        return totalAge
+      }, 0)
+      averageAgeMovies[movie.title] = Math.floor(totalAge / movie.cast.length)
+    })
+    result[director] = averageAgeMovies
+    return result
+  }, {})
+}
+
+console.log(averageAgePerMovie())
 
 /*
 Level 3
