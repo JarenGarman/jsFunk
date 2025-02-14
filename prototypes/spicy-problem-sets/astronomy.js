@@ -29,6 +29,22 @@ Annotate:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const getStarsByColor = () => {
+  const colors = stars.reduce((colors, star) => {
+    if (!colors.includes(star.color)) {
+      colors.push(star.color)
+    }
+    return colors
+  }, [])
+  return colors.reduce((starsByColor, color) => {
+    starsByColor[color] = stars.filter((star) => {
+      return star.color === color
+    })
+    return starsByColor
+  }, {})
+}
+
+console.log(getStarsByColor())
 
 /*
 Level 2
