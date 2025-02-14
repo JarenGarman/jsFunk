@@ -60,6 +60,12 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Map over the characters array to create our return array
+  2. Reduce over the character's weapons to create the stats object
+  3. Find the weapon in the weapons object
+  4. Add the range and damage to their respective properties in the stats object
+  5. Return
 */
 
 const charactersByTotal = () => {
