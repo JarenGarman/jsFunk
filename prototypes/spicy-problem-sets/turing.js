@@ -114,6 +114,13 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Reduce over the instructors to create a new object with the instructor name as the key
+  2. Create a new array to store eligible cohorts for the instructor, iterating over each subject
+  3. Iterate over each cohort, checking if the curriculum contains the subject and the cohort is not already in the array
+  4. Add cohort to the array
+  5. Map over the array to convert it into just the mod numbers
+  6. Return
 */
 
 const modulesPerTeacher = () => {
