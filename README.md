@@ -82,7 +82,7 @@ If you'd like to keep track of your progress, feel free to use the checklist bel
 ### Double/Triple Data Sets
 
 - [X] turing (instructors, cohorts)
-- [ ] astronomy (constellations, stars)
+- [X] astronomy (constellations, stars)
 - [ ] ultima (weapons, characters)
 - [ ] dinosaurs (dinosaurs, humans, movies)
 
