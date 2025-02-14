@@ -72,6 +72,10 @@ e.g.
 
 Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
+
+  1. Use reduce to create a new object
+  2. Filter the instructors to find only the ones for the particular module
+  3. Divide the cohort student count by the length of the filtered array
 */
 
 const studentsPerInstructor = () => {
