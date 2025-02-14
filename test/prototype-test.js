@@ -1063,13 +1063,13 @@ describe("PROTOTYPES", () => {
   });
 
   describe("Ultima Prompts", () => {
-    it.skip("getTotalDamage", () => {
+    it("getTotalDamage", () => {
       const e = getTotalDamage();
 
       expect(e).to.deep.equal(59)
     });
 
-    it.skip("charactersByTotal", () => {
+    it("charactersByTotal", () => {
       const e = charactersByTotal();
 
       expect(e).to.deep.equal([{
