@@ -62,6 +62,20 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const charactersByTotal = () => {
+  return characters.map((character) => {
+    const stats = character.weapons.reduce((stats, weapon) => {
+      stats.damage += weapons[weapon].damage
+      stats.range += weapons[weapon].range
+      return stats
+    }, { damage: 0, range: 0 })
+    const result = {}
+    result[character.name] = stats
+    return result
+  })
+}
+
+console.log(charactersByTotal())
 
 /*
 Level 3
