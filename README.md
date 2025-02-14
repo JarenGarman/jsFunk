@@ -84,7 +84,7 @@ If you'd like to keep track of your progress, feel free to use the checklist bel
 - [X] turing (instructors, cohorts)
 - [X] astronomy (constellations, stars)
 - [X] ultima (weapons, characters)
-- [ ] dinosaurs (dinosaurs, humans, movies)
+- [X] dinosaurs (dinosaurs, humans, movies)
 
 ## Resources
 

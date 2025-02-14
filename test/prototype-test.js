@@ -849,7 +849,7 @@ describe("PROTOTYPES", () => {
       expect(e).to.deep.equal(40)
     });
 
-    it.skip("getBreweryBeerCount", () => {
+    it("getBreweryBeerCount", () => {
       const e = getBreweryBeerCount();
 
       expect(e).to.deep.equal([{
@@ -1097,7 +1097,7 @@ describe("PROTOTYPES", () => {
   });
 
   describe("Dinosaur Prompts", () => {
-    it.skip("countAwesomeDinosaurs", () => {
+    it("countAwesomeDinosaurs", () => {
       const e = countAwesomeDinosaurs();
 
       expect(e).to.deep.equal({
@@ -1109,7 +1109,7 @@ describe("PROTOTYPES", () => {
       })
     });
 
-    it.skip("averageAgePerMovie", () => {
+    it("averageAgePerMovie", () => {
       const e = averageAgePerMovie();
 
       expect(e).to.deep.equal({

@@ -129,7 +129,7 @@ Annotation:
   Take notes on the error messages that led you to fixing those details.
 */
 
-// module.exports = {
-//   countAwesomeDinosaurs,
-//   averageAgePerMovie
-// }
+module.exports = {
+  countAwesomeDinosaurs,
+  averageAgePerMovie
+}
