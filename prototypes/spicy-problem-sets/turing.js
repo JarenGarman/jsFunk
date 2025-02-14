@@ -80,7 +80,7 @@ Annotation:
 
 const studentsPerInstructor = () => {
   return cohorts.reduce((studentsPer, cohort) => {
-    studentsPer[cohort.cohort] = cohort.studentCount / instructors.filter((instructor) => {
+    studentsPer[`cohort${cohort.cohort}`] = cohort.studentCount / instructors.filter((instructor) => {
       return instructor.module === cohort.module
     }).length
     return studentsPer
@@ -135,7 +135,7 @@ const modulesPerTeacher = () => {
     }, [])
     modulesPer[instructor.name] = eligibleCohorts.map((cohort) => {
       return cohort.module
-    })
+    }).sort()
     return modulesPer
   }, {})
 }
@@ -212,11 +212,14 @@ Test:
 Annotation:
   If your tests did not immediately pass, take notes on what details you missed while building and checking your solutions.
   Take notes on the error messages that led you to fixing those details.
+
+  Had to add an interpolated string as the key in level 2
+  Also had to add a sort() call to the cohort numbers in level 3
 */
 
-// module.exports = {
-//   studentsForEachInstructor,
-//   studentsPerInstructor,
-//   modulesPerTeacher,
-//   curriculumPerTeacher
-// }
+module.exports = {
+  studentsForEachInstructor,
+  studentsPerInstructor,
+  modulesPerTeacher,
+  curriculumPerTeacher
+}
