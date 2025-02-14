@@ -116,7 +116,24 @@ Annotation:
   After you find a solution, write out the steps of that solution.  Break them down as much as possible.
 */
 
+const modulesPerTeacher = () => {
+  return instructors.reduce((modulesPer, instructor) => {
+    const eligibleCohorts = instructor.teaches.reduce((eligibleCohorts, subject) => {
+      cohorts.forEach((cohort) => {
+        if (cohort.curriculum.includes(subject) && !eligibleCohorts.includes(cohort)) {
+          eligibleCohorts.push(cohort)
+        }
+      })
+      return eligibleCohorts
+    }, [])
+    modulesPer[instructor.name] = eligibleCohorts.map((cohort) => {
+      return cohort.module
+    })
+    return modulesPer
+  }, {})
+}
 
+console.log(modulesPerTeacher())
 
 /*
 Level 4
